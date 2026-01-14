@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PAGE 1 : PASSWORD PAGE -->
+    <div id="passwordPage" class="page">
+        <h2>Enter Password 🔐</h2>
+
+        <div class="password-box">
+            <input type="password" id="passwordInput" placeholder="Enter password...">
+            <span id="toggleEye">👁️</span>
+        </div>
+
+        <button onclick="checkPassword()">Submit</button>
+        <p id="errorMsg"></p>
+    </div>
+
+    <!-- PAGE 2 : WELCOME PAGE -->
+    <div id="welcomePage" class="page hidden">
+        <h1>🎉 Welcome to the Magic World 🎉</h1>
+        <button onclick="openGallery()">Open Magic ✨</button>
+    </div>
+
+    <!-- PAGE 3 : GALLERY PAGE -->
+    <div id="galleryPage" class="page hidden">
+        <button onclick="goHome()">🏠 Go Home</button>
+
+        <div id="galleryContainer"></div>
+    </div>
+
+    <!-- EMOJI BACKGROUND LAYER -->
+    <div id="emojiContainer" class="hidden"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
